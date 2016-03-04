@@ -104,7 +104,8 @@ namespace Sample2_Extending
         {
             Console.WriteLine( "Disconnected from Steam" );
 
-            isRunning = false;
+            //isRunning = false;
+            steamClient.Connect();
         }
 
         static void OnLoggedOn( SteamUser.LoggedOnCallback callback )
